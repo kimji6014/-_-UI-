@@ -1,0 +1,399 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg-main.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+}
+
+/* header */
+header {
+    height: 100px;
+    width: 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo {
+    width: 150px;
+}
+
+header .container .logo a {}
+
+header .container .logo a img {
+    width: 100%;
+}
+
+.memu_wrap {}
+
+.memu_wrap ul {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.memu_wrap ul li {
+    list-style: none;
+}
+
+.memu_wrap ul li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search {}
+
+.search i {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* main*/
+.main {
+    margin-top: 5%;
+}
+
+.main .slider {}
+
+.main .slider .slick-slide {
+    display: flex;
+    overflow: hidden;
+}
+
+
+.left_area {
+    width: 50%;
+    position: relative;
+}
+
+.left_area .nike_img {
+    width: 120%;
+    padding-top: 160px;
+}
+
+.main .slider .slick-active .left_area .nike_img {
+    animation: fadeInR 0.3s 0.5s both;
+}
+
+.left_area .nike_img img {
+    width: 75%;
+}
+
+.left_area .nike_tit {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    z-index: -1;
+}
+
+.left_area .nike_tit h2 {
+    font-size: 135px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main .slider .slick-active .left_area .nike_tit h2 {
+    animation: fadeInL 0.3s 0.5s both;
+}
+
+.left_area .nike_tit p {
+    position: absolute;
+    right: 0;
+    top: 90%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 15px;
+}
+
+.main .slider .slick-active .left_area .nike_tit p {
+    animation: fadeInL 0.3s 0.5s both;
+}
+
+.right_area {
+    position: relative;
+    width: 50%;
+}
+
+.right_area .middle_txt {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 70%;
+}
+
+.main .slider .slick-active .right_area .middle_txt .sub_tit {
+    animation: fadeInL 0.3s 0.5s both;
+}
+
+.right_area .middle_txt .sub_tit h3 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+
+.main .slider .slick-active .right_area .middle_txt .sub_tit h3 {
+    animation: fadeInL 0.3s 0.5s both;
+
+}
+
+.right_area .middle_txt .sub_tit .star {
+    position: absolute;
+    left: 130px;
+    top: 35px;
+    width: 100px;
+    height: 50px;
+}
+
+.main .slider .slick-active .right_area .middle_txt .sub_tit .star {
+    animation: fadeInL 0.3s 0.5s both;
+
+}
+
+.right_area .middle_txt .sub_tit .star ul {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    color: yellow;
+}
+
+.right_area .middle_txt .sub_tit .star ul li {
+    list-style: none;
+    font-size: 15px;
+    letter-spacing: 10px;
+}
+
+.right_area .middle_txt .sub_tit .star ul li:last-child {
+    color: #fff;
+}
+
+
+.right_area .middle_txt .sub_tit span {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style: none;
+}
+
+
+.right_area .middle_txt p {
+    color: #fff;
+    font-size: 20px;
+    margin: 30px 0px;
+    font-style: none;
+}
+
+.main .slider .slick-active .right_area .middle_txt p {
+    animation: fadeInR 0.3s 0.5s both;
+}
+
+.right_area .middle_txt .sub_tit2 {}
+
+.main .slider .slick-active .right_area .middle_txt .sub_tit2 {
+    animation: fadeInR 0.3s 0.5s both;
+}
+
+.right_area .middle_txt .sub_tit2 .sub {}
+
+
+.right_area .middle_txt .sub_tit2 .sub i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.right_area .middle_txt .sub_tit2 .sub span {
+    font-size: 15px;
+    color: #fff;
+    vertical-align: 6px;
+    list-style:
+}
+
+.right_area .middle_txt .sub_tit2 .s1 {}
+
+.right_area .middle_txt .sub_tit2 .s2 {}
+
+
+.right_area .bottom_area {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    display: flex;
+}
+
+.right_area .bottom_area .size_btn {
+    background-color: yellow;
+    margin-right: 20px;
+    position: relative;
+}
+
+.main .slider .slick-active .right_area .bottom_area .size_btn {
+    animation: fadeInL 0.3s 0.5s both;
+}
+
+.right_area .bottom_area .size_btn a {
+    display: block;
+    padding: 10px 20px 10px 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.right_area .bottom_area .size_btn i {
+    position: absolute;
+    right: 6px;
+    top: 14px;
+    font-size: 20px;
+    color: #000
+}
+
+.right_area .cart_btn {
+    border: 2px solid #fff;
+    margin-right: 20px;
+}
+
+.main .slider .slick-active .right_area .bottom_area .cart_btn {
+    animation: fadeInB 0.3s 0.5s both;
+}
+
+
+.right_area .cart_btn a {
+    display: block;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.right_area .price {}
+
+.main .slider .slick-active .right_area .bottom_area .price {
+    animation: fadeInR 0.3s 0.5s both;
+}
+
+.right_area .price span {
+    color: #fff;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+
+
+/* slick 버튼 */
+.main .slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    font-size: 0;
+    
+}
+
+.main .slider .slick-prev {
+    left: -2%
+}
+
+.main .slider .slick-prev:after {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+    color: #fff;
+    font-size: 30px;
+    background-color: rgb(75, 75, 75);
+    padding: 5px;
+}
+
+
+.main .slider .slick-next {
+    right: -2%
+}
+
+.main .slider .slick-next:after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    visibility: visible;
+    color: #fff;
+    font-size: 30px;
+    background-color: rgb(75, 75, 75);
+    padding: 5px;
+}
+
+
+@keyframes fadeInR {
+    0% {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInL {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInT {
+    0% {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInB {
+    0% {
+        transform: translateY(150%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
